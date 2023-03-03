@@ -6,13 +6,13 @@
   import Floating from "@app/components/Floating.svelte";
   import Icon from "@app/components/Icon.svelte";
   import { createEventDispatcher, onMount } from "svelte";
-  import { formatNodeId } from "@app/lib/utils";
+  import { formatNodeId, parseNodeId, truncateId } from "@app/lib/utils";
 
   export let peer: string | null = null;
   export let peers: Peer[];
 
   let meta: Peer | undefined;
-  // List of items to be created for the Dropdown component.
+
   let items: {
     key: string;
     value: string;
@@ -30,8 +30,9 @@
   onMount(() => {
     meta = peers.find(p => p.id === peer);
     items = peers.map(p => {
+      console.log({ p });
       return {
-        key: formatNodeId(p.id),
+        key: `<span style="gap: 0;"><span style="color: var(--color-foreground-5);display: inline;">did:key:</span>${p.id}</span>`,
         value: p.id,
         title: createTitle(p),
         badge: p.delegate ? "delegate" : null,
@@ -84,12 +85,14 @@
       <Icon name="fork" />
       {#if meta}
         <span class="peer-id">
-          {formatNodeId(meta.id)}
+          <span style="display: flex;">
+            <span style="color: var(--color-secondary-5);">did:key:</span>
+            {truncateId(meta.id)}
+          </span>
         </span>
         {#if meta.delegate}
           <Badge variant="primary">delegate</Badge>
         {/if}
-        <!-- If the delegate metadata is not found -->
       {:else if peer}
         <span class="peer-id">
           {formatNodeId(peer)}
