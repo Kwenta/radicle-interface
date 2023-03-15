@@ -13,44 +13,14 @@
   "projects": {
     "pinned": [
       {
-        "name": "solmate",
-        "id": "rad:git:hnrkbgczcfh9ycjtdfynmqyg478bqrso1hnty",
-        "seed": "willow.radicle.garden"
-      },
-      {
-        "name": "openzeppelin-contracts",
-        "id": "rad:git:hnrkbx9xzjg8tf9hj9uh5qdxwuyjddsxyaw6o",
-        "seed": "willow.radicle.garden"
-      },
-      {
-        "name": "haskell-language-server",
-        "id": "rad:git:hnrkf1jaje1e93rua64zgphg7zb14qo9zexgy",
-        "seed": "pine.radicle.garden"
-      },
-      {
-        "name": "rx",
-        "id": "rad:git:hnrk8aoks6w3tdbcwt9dqnor9aqy8tjha3k5o",
+        "name": "kwenta-state-log",
+        "id": "rad:git:hnrkq1oex148yz4zi9tm7spfnjaryyuc93yay",
         "seed": "maple.radicle.garden"
       },
       {
-        "name": "astrolabe",
-        "id": "rad:git:hnrkrwewct7pb1biwmf59qa3rzod8mauundzy",
-        "seed": "willow.radicle.garden"
-      },
-      {
-        "name": "svelte-dappkit",
-        "id": "rad:git:hnrkgcm1e588ewy7iiq4abrrgtf5ioq577eno",
+        "name": "kwenta",
+        "id": "rad:git:hnrkdc9jh3a1ud7k3spy9pper1ptbkh55yy5y",
         "seed": "maple.radicle.garden"
-      },
-      {
-        "name": "tmyxer",
-        "id": "rad:git:hnrkp5jgfxwxrffjsp148fyzdc457pa9ja38y",
-        "seed": "pine.radicle.garden"
-      },
-      {
-        "name": "hexade",
-        "id": "rad:git:hnrkxj511yr48oo3usrt4jzfoucj88zphpryo",
-        "seed": "pine.radicle.garden"
       }
     ]
   }
